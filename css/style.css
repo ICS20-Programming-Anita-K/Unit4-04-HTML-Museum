@@ -1,0 +1,32 @@
+/* Created by: Anita Kay
+* Created on: May 2022
+* This CSS file defines the style for index.html
+* ICS2O-Unit4-04-HTML-Museum
+*/
+
+body {
+	background-color: #bbc191;
+}
+
+h1 {
+	background-color: #8a5d3d;
+	color: #bbc191;
+	padding: 40px;
+	text-align: center;
+}
+
+p, h2, h3, h4, h5, h6 {
+  color: #677423
+}
+
+div {
+	
+  font-weight: bold;
+  color: #bbc191;
+  margin: 5px;
+}
+
+#display-results{
+  background-color: #8a5d3d;
+	font-size: 20px;
+}
