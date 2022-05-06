@@ -16,14 +16,21 @@ function displayCost() {
 	let select = document.getElementById('day');
 	let day = select.options[select.selectedIndex].value;
 
-  	
-	if (age < 5 || age > 95) {
-		cost = "The cost is FREE for you."
+  // Define constants
+  const CHILD_FREE = 5
+  const ADULT_FREE = 95
+  const STUDENT_YOUNG = 12
+  const STUDENT_OLD = 21
+  
+    // If the age is below 5 or above 95, display "The cost is free for you."
+	if (age < CHILD_FREE || age > ADULT_FREE) {
+		cost = "The cost is free for you."
 	}
-	else if ((day == "Tuesday") || (day == "Thursday)") 
-			 || (age >=12) && (age <=21)) {
+    // If the day is Tuesday or Thursday, or the age is between 12 and 21, display, "You get a student discount."
+	else if (((day == "Tuesday") || (day == "Thursday")) || ((age >= STUDENT_YOUNG) && (age <= STUDENT_OLD))) {
 		cost = "You get a student discount."
 	}
+    // If none of the above are true, display, "You have to pay regular price."
 	else if ((age > 0) || (day != "")) {		
 		cost = "You have to pay regular price."
 	}
